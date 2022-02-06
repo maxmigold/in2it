@@ -1,41 +1,36 @@
 <template>
-   <v-app class="dark lighten-4">
+  <v-app class="dark lighten-4">
 
     <v-main>
       <Navbar/>
-      <Home/>
-      <!-- <router-view/>  -->
+     <router-view/> 
+     
+      
     </v-main>
   </v-app>
-</template>
+</template> 
+ 
+
+<style  scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+</style>
+
 
 <script>
 import Navbar from '@/components/Navbar'
-import Home from '@/components/Home'
 export default {
-  name: "App",
-   components: {
+  name: 'App',
+  components: {
    
     Navbar,
-    Home,
-    
-
+   
     
   },
-
   data: () => ({
     //
   }),
 };
 </script>
-<style scoped>
-.imageMain {
-  background-position: center;
-  object-fit: contain;
-  display: block;
-}
-.gridContainer {
-  text-align: center;
-  justify-content: space-evenly;
-}
-</style>
