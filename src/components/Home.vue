@@ -1,39 +1,5 @@
  <template>
-  <v-app>
-    <v-app-bar app color="white">
-      <div class="d-flex align-center">
-        <h1 class="blue--text lighten-3--text">In</h1>
-        <h1>2</h1>
-        <h1 class="blue--text lighten-3--text">it</h1>
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <router-link to="#" style="color: grey; text-decoration: none">
-        <span class="hidden-sm-and-down links">About</span>
-      </router-link>
-      <router-link
-        to="#"
-        style="color: grey; text-decoration: none"
-        class="mx-2"
-      >
-        <span class="hidden-sm-and-down links">Contact</span>
-      </router-link>
-      <router-link
-        to="#"
-        style="color: grey; text-decoration: none"
-        class="mx-2"
-      >
-        <span class="hidden-sm-and-down links">Our Story</span>
-      </router-link>
-      <router-link
-        to="#"
-        style="color: grey; text-decoration: none"
-        class="mx-2"
-      >
-        <span class="links">Careers</span>
-      </router-link>
-    </v-app-bar>
+  
 
     <v-main>
       <v-row justify="space-around">
@@ -47,10 +13,10 @@
                 Your Corporate Real Estate Company
               </h1>
             </v-card-title>
-            <v-title class="mt-8"
+            <v-card-title class="mt-8"
               ><h1 class="ml-8 dark--text lighten-3-text">
                 And Management
-              </h1></v-title
+              </h1></v-card-title
             >
           </v-img>
         </v-card>
@@ -102,12 +68,13 @@
         </v-layout>
       </v-container>
     </v-main>
-  </v-app>
+  
 </template>
 
 <script>
+
 export default {
-  name: "HelloWorld",
+  name: "HomeWorld",
 
   data: () => ({
     //
@@ -126,63 +93,63 @@ export default {
   justify-content: space-evenly;
 }
 </style>
-</template>
 
-<script>
-  export default {
-    name: 'HelloWorld',
 
-    data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
-  }
-</script>
+// <script>
+//   export default {
+//     name: 'HelloWorld',
+
+//     data: () => ({
+//       ecosystem: [
+//         {
+//           text: 'vuetify-loader',
+//           href: 'https://github.com/vuetifyjs/vuetify-loader',
+//         },
+//         {
+//           text: 'github',
+//           href: 'https://github.com/vuetifyjs/vuetify',
+//         },
+//         {
+//           text: 'awesome-vuetify',
+//           href: 'https://github.com/vuetifyjs/awesome-vuetify',
+//         },
+//       ],
+//       importantLinks: [
+//         {
+//           text: 'Documentation',
+//           href: 'https://vuetifyjs.com',
+//         },
+//         {
+//           text: 'Chat',
+//           href: 'https://community.vuetifyjs.com',
+//         },
+//         {
+//           text: 'Made with Vuetify',
+//           href: 'https://madewithvuejs.com/vuetify',
+//         },
+//         {
+//           text: 'Twitter',
+//           href: 'https://twitter.com/vuetifyjs',
+//         },
+//         {
+//           text: 'Articles',
+//           href: 'https://medium.com/vuetify',
+//         },
+//       ],
+//       whatsNext: [
+//         {
+//           text: 'Explore components',
+//           href: 'https://vuetifyjs.com/components/api-explorer',
+//         },
+//         {
+//           text: 'Select a layout',
+//           href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
+//         },
+//         {
+//           text: 'Frequently Asked Questions',
+//           href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
+//         },
+//       ],
+//     }),
+//   }
+// </script>
