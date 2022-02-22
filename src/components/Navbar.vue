@@ -12,7 +12,7 @@
         </router-link>
 
         <v-spacer></v-spacer>
-         <v-app-bar-nav-icon @click="drawer = !drawer"  class="hidden-md-and-up mx-2"></v-app-bar-nav-icon>
+         <v-app-bar-nav-icon right medium @click="drawer = !drawer"  class="hidden-md-and-up mx-0"></v-app-bar-nav-icon>
          <v-navigation-drawer  v-model="drawer" app class="grey darken-4">
              <v-list-item>
           <v-list-item-content>
@@ -47,11 +47,18 @@
            
          </v-navigation-drawer>
          
-        <router-link to="#" style="color: grey; text-decoration: none">
+        <router-link to="/" style="color: grey; text-decoration: none">
+          <span class="hidden-sm-and-down links">Home</span>
+        </router-link>
+        <router-link
+          to="/About"
+          style="color: grey; text-decoration: none"
+          class="mx-2"
+        >
           <span class="hidden-sm-and-down links">About</span>
         </router-link>
         <router-link
-          to="#"
+          to="/#"
           style="color: grey; text-decoration: none"
           class="mx-2"
         >
@@ -91,7 +98,8 @@ export default {
     data: () => ({
       drawer: false,
       links: [
-          {text:"About", route:"/"},
+          {text:"Home", route:"/"},
+          {text:"About", route:"/About"},
           {text:"Our Story", route:"/"},
           {text:"Blog", route:"/"},
           {text:"Contact", route:"/"},

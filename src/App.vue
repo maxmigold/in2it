@@ -4,6 +4,7 @@
     <v-main>
       <Navbar/>
      <router-view/> 
+     <Footer/>
      
       
     </v-main>
@@ -12,20 +13,23 @@
  
 
 <style  scoped>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 </style>
 
 
 <script>
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+
 export default {
   name: 'App',
   components: {
    
     Navbar,
+    Footer,
+    
+
    
     
   },
