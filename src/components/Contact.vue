@@ -20,7 +20,7 @@
           Akoka Yaba, Lagos.
         </p>
       </div>
-      <v-layout  class="pt-5 mx-7 input">
+      <v-layout row class="pt-5 mx-7 input">
           <v-flex xs12 sm12 md6 x6 class="input-1">
             <span class="col-list">
                  <v-text-field
