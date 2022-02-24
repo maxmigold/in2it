@@ -100,7 +100,7 @@ export default {
 .v {
   color: antiquewhite;
   position: relative;
-  left: 25%;
+  left: 5px;
 }
 .input{
     color: white;
