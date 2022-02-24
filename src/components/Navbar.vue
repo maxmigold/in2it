@@ -72,7 +72,7 @@
           <span class="hidden-sm-and-down links">Blog</span>
         </router-link>
         <router-link
-          to="#"
+          to="/Contact"
           style="color: grey; text-decoration: none"
           class="mx-2"
         >
