@@ -10,13 +10,11 @@
   
  <v-card
     class="mx-auto card-container"
-    width="850"
-    height="400"
     outlined
   >
-    <v-list-item three-line>
+    <v-list-item >
       <v-list-item-content>
-        <v-list-item-title class="text-h5 header-text mb-5">
+        <v-list-item-title class="text-h5 header-text">
           How We Work
         </v-list-item-title>
         <v-card-subtitle>
@@ -82,11 +80,15 @@ export default {
 };
 </script>
 <style scoped>
+.contain{
+  height: inherit;
+}
 .header-text{
   text-align: center;
 }
 .card-container{
   position: relative;
-  bottom: 59px;
+  bottom: 6rem;
+  width: 50em;
 }
 </style>
