@@ -1,25 +1,28 @@
 <template>
   <div class="contain">
     <div class="contact-container">
-      <h6 class="touch">Get In Touch</h6>
+        <div class="contact-heading">
+            <h6 class="touch">Get In Touch</h6>
       <div class="d-flex align-center">
         <span class="material-icons v"> home </span>
-        <span class="pt-4 ml-3 v"
+        <span class="pt-4 ml-3 texts v"
           >Address: Suite 20B, HRDC Building, University of Lagos Main Campus
           Akoka Yaba, Lagos.
         </span>
       </div>
       <div class="d-flex align-center ">
                 <span class="material-icons v"> call </span>
-                <p class="pt-4 ml-3 v">Mobile: 621-254-2147</p>
+                <p class="pt-4 ml-3 texts v">Mobile: 621-254-2147</p>
               </div>
       <div class="d-flex align-center">
         <span class="material-icons v">local_post_office </span>
-        <p class="pt-4 ml-3 v">
+        <p class="pt-4 ml-3 texts v">
           Address: Suite 20B, HRDC Building, University of Lagos Main Campus
           Akoka Yaba, Lagos.
         </p>
       </div>
+        </div>
+      
       <v-layout row class="pt-5 mx-7 input">
           <v-flex xs12 sm12 md6 x6 class="input-1">
             <span class="col-list">
@@ -92,6 +95,9 @@ export default {
   text-align: center;
   padding-top: 30px;
 }
+.contact-heading{
+    text-align: center;
+}
 .touch {
   color: white;
   font-size: 40px;
@@ -101,6 +107,10 @@ export default {
   color: antiquewhite;
   position: relative;
   left: 5px;
+  
+}
+.texts{
+    font-size: 16px;
 }
 .input{
     color: white;
