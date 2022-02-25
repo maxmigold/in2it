@@ -120,7 +120,7 @@
   border-left: 3px solid #d9b650;
   height: 20px;
   position: relative;
-  left: 72px;
+  left: 4.5em;
   top: 20px;
 }
 .industry-verticals {

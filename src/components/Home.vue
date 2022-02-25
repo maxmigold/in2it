@@ -163,7 +163,7 @@
             <v-card-title class="ml-8 mt-8"
               >Estate Management Firm</v-card-title
             >
-            <div class="underline-text ml-6"></div>
+            <div class="underline-text "></div>
             <v-card-text
               >Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
               massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
@@ -384,19 +384,21 @@ export default {
   width: 270px;
   background-color: #d9b650;
   height: 2px;
+  position: relative;
+  left:9%;
 }
 .underline-learn-text {
   width: 180px;
   background-color: #d9b650;
   height: 2px;
   position: relative;
-  left: 69px;
+  left: 22%;
 }
 .people {
   color: #d9b650;
   font-size: 36px;
   position: relative;
-  right: 108px;
+  right: 3em;
   top: 25px;
 }
 .contain {
@@ -406,14 +408,15 @@ export default {
   border: 3px solid #d9b650;
   border-radius: 50%;
   position: relative;
-  right: 55px;
+  right: 3.5em;
   top: 10px;
 }
 .text-description {
   position: relative;
-  left: 5px;
+  left: 1rem;
   top: 10px;
   word-wrap: break-word;
+  font-size: 16px;
 }
 .client-image {
   height: 20px;
