@@ -17,8 +17,7 @@
       <div class="d-flex align-center">
         <span class="material-icons v">local_post_office </span>
         <p class="pt-4 ml-3 texts v">
-          Address: Suite 20B, HRDC Building, University of Lagos Main Campus
-          Akoka Yaba, Lagos.
+          Email: contact@support.com
         </p>
       </div>
         </div>
