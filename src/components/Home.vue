@@ -16,50 +16,27 @@
         <span class="ml-5 mt-3 vl"></span>
         <h1 class="ml-1 mt-2 industry-verticals">Our Offers</h1>
       </div>
-      <p class="ml-5 mt-5">Know how in three industry verticals</p>
+      <p class="ml-5 mt-5">Know how in various industry verticals</p>
     </v-container>
 
     <v-container grid-list-xl>
       <v-layout row align="center">
-        <v-flex xs12 sm12 md4 xl4>
+        <v-flex xs12 sm12 md4 xl4 
+        v-for="(offer, z) in offers"
+        :key="z">
           <v-card class="mx-auto" width="500">
             <v-img
-              src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              :src="offer.avatar"
               height="200px"
               width="500px"
             ></v-img>
 
-            <v-card-title>Real Estate Management </v-card-title>
-
-            <v-card-subtitle class="subtitle">(CREM)</v-card-subtitle>
+            <v-card-title>{{offer.header}} </v-card-title>
+            
+            <v-card-subtitle class="subtitle inline-block">{{offer.details}}</v-card-subtitle><label for="read-more-checkbox" class="read-more__label" data-read-more="Read more" data-read-less="See less" aria-hidden="true"></label>
           </v-card>
         </v-flex>
-        <v-flex xs12 sm12 md4 xl4>
-          <v-card class="mx-auto" width="500">
-            <v-img
-              src="https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY="
-              height="200px"
-              width="500px"
-            ></v-img>
-
-            <v-card-title>Information Technology </v-card-title>
-
-            <v-card-subtitle class="subtitle"> (IT)</v-card-subtitle>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 sm12 md4 xl4>
-          <v-card class="mx-auto" width="500">
-            <v-img
-              src="https://media.istockphoto.com/photos/portrait-handsome-working-dress-safety-vest-and-safety-helmet-hold-picture-id1309496470?k=20&m=1309496470&s=612x612&w=0&h=CUQj__3ZlMo1RUqpS6CuVCSkNXe4E11dymIhicUusew="
-              height="200px"
-              width="500px"
-            ></v-img>
-
-            <v-card-title> Professional Services </v-card-title>
-
-            <v-card-subtitle class="subtitle">(Consultancy)</v-card-subtitle>
-          </v-card>
-        </v-flex>
+       
       </v-layout>
     </v-container>
     <v-divider></v-divider>
@@ -95,27 +72,27 @@
         <v-flex xs12 sm12 md3 xl3>
           <v-card class="mx-auto p-2" width="500">
             <v-img
-              src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-              height="200px"
-              width="500px"
-            ></v-img>
-
-            <v-card-title>Chris Smith</v-card-title>
-
-            <v-card-subtitle class="subtitle">CEO</v-card-subtitle>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 sm12 md3 xl3>
-          <v-card class="mx-auto" width="500">
-            <v-img
               src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
               height="200px"
               width="500px"
             ></v-img>
 
-            <v-card-title>Ava Johnson</v-card-title>
+            <v-card-title>Mario Capuri</v-card-title>
 
-            <v-card-subtitle class="subtitle">Head of HR</v-card-subtitle>
+            <v-card-subtitle class="subtitle">Management And BIM Manager</v-card-subtitle>
+          </v-card>
+        </v-flex>
+        <v-flex xs12 sm12 md3 xl3>
+          <v-card class="mx-auto" width="500">
+            <v-img
+              src="/assets/paulErubami.jpg"
+              height="200px"
+              width="500px"
+            ></v-img>
+
+            <v-card-title>Paul Erubami</v-card-title>
+
+            <v-card-subtitle class="subtitle">Facility Manager And Sustainability Expert</v-card-subtitle>
           </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 xl3>
@@ -126,9 +103,9 @@
               width="500px"
             ></v-img>
 
-            <v-card-title> William Dutch </v-card-title>
+            <v-card-title> Fisayo Animashaun</v-card-title>
 
-            <v-card-subtitle class="subtitle">Financial Lawyer</v-card-subtitle>
+            <v-card-subtitle class="subtitle">Facility And BIM Manager </v-card-subtitle>
           </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 xl3>
@@ -139,10 +116,10 @@
               width="500px"
             ></v-img>
 
-            <v-card-title> Milla Vitch </v-card-title>
+            <v-card-title> Taiwo Emmanuel A. </v-card-title>
 
             <v-card-subtitle class="subtitle"
-              >Marketing Manager</v-card-subtitle
+              >Architect And BIM Manager</v-card-subtitle
             >
           </v-card>
         </v-flex>
@@ -329,6 +306,7 @@ export default {
   name: "Home",
 
   data: () => ({
+   // this.offers.details: false,
     items: [
       {
         src: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -348,11 +326,35 @@ export default {
       { number: 1289, details: "TOTAL EXECUTION" },
       { number: 2563, details: "SUCCESSFUL CASES" },
     ],
+     offers: [
+      { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+       { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+        { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+         { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+          { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+           { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+            { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+             { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+              { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+      
+    ],
   }),
+   methods: {
+    shortText() {
+      if (this.offers.details) {
+        let newText = this.offers.details.substring(0);
+        return newText;
+      } else {
+        /*let newText = this.lorem.substring(0,50) + `...`;*/
+        let newText = this.offers.details.substring(0, 50);
+        return newText;
+      }
+    }
+  }
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .gridContainer {
   text-align: center;
   justify-content: space-evenly;
@@ -364,6 +366,12 @@ export default {
 .industry-verticals {
   font-size: 30px;
   font-weight: 500;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.pointer {
+  cursor: pointer;
 }
 .statistic {
   font-size: 20px;
@@ -424,5 +432,61 @@ export default {
 .client-image {
   height: 20px;
   width: 40px;
+}
+
+
+read-more {
+  /* You can update this variable directly in the html with the style attribute: style="--line-clamp: 3" */
+  --line-clamp: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.read-more__text {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more__checkbox {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.read-more__checkbox ~ .read-more__label {
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Don't forget focus and hover styles for accessibility! */
+.read-more__checkbox:focus ~ .read-more__label {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.read-more__checkbox:hover ~ .read-more__label {
+  text-decoration: none;
+}
+
+.read-more__checkbox ~ .read-more__label::before {
+  content: attr(data-read-more);
+}
+
+.read-more__checkbox:checked ~ .read-more__label::before {
+  content: attr(data-read-less);
+}
+
+.read-more__checkbox:checked ~ .read-more__text {
+  --line-clamp: none;
+  -webkit-line-clamp: var(--line-clamp);
 }
 </style>
