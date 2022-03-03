@@ -17,7 +17,7 @@
         <v-list-item-title class="text-h5 header-text">
           How We Work
         </v-list-item-title>
-        <v-card-subtitle>
+        <v-card-subtitle class="text-justify">
           Greyhound divisely hello coldly fonwderfully
           Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
               massa vestil bulum lacinia arcu eget nulla. Class aptent taciti

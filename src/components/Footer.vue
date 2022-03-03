@@ -9,7 +9,7 @@
               <h4>About Us</h4>
             </div>
             <nav class="col-list pt-2">
-              <p class="detail-listing">
+              <p class="detail-listing text-justify">
                 Vivamus consectetuer risus tortor consectur. Integer nec odio
                 praesent libero cursus ante dapibus.Sed cursus ante dapibus
                 diam. Sed nisi. Nulla quis sem at nibh. Vivamus consectetuer
@@ -49,7 +49,7 @@
             <nav class="col-list">
               <div class="d-flex align-center contact-details pl-2">
                 <span class="material-icons"> home </span>
-                <p class="logo-number detail pt-4 ml-3">Address: Suite 20B, HRDC Building, University of Lagos Main Campus Akoka Yaba, Lagos.</p>
+                <p class="logo-number detail text-justify pt-4 ml-3">Address: Suite 20B, HRDC Building, University of Lagos Main Campus Akoka Yaba, Lagos.</p>
               </div>
               <div class="d-flex align-center contact-details pl-2">
                 <span class="material-icons"> call </span>

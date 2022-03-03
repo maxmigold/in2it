@@ -65,7 +65,7 @@
           style="color: grey; text-decoration: none"
           class="mx-2"
         >
-          <span class="hidden-sm-and-down links">About</span>
+          <span class="hidden-sm-and-down links">About Us</span>
         </router-link>
         <router-link
           to="/Story"
@@ -78,15 +78,16 @@
           to="#"
           style="color: grey; text-decoration: none"
           class="mx-2"
+          disabled
         >
-          <span class="hidden-sm-and-down links">Blog</span>
+          <span disabled class="hidden-sm-and-down links">Blog</span>
         </router-link>
         <router-link
           to="/Contact"
           style="color: grey; text-decoration: none"
           class="mx-2"
         >
-          <span class="hidden-sm-and-down links">Contact</span>
+          <span class="hidden-sm-and-down links">Contact Us</span>
         </router-link>
         <v-icon
           right

@@ -93,7 +93,7 @@
       </div>
       <v-layout row align="center">
         <v-flex xs12 sm12 md3 xl3>
-          <v-card class="mx-auto" width="500">
+          <v-card class="mx-auto p-2" width="500">
             <v-img
               src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
               height="200px"
@@ -164,8 +164,8 @@
               >Estate Management Firm</v-card-title
             >
             <div class="underline-text "></div>
-            <v-card-text
-              >Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+            <v-card-text class="text-justify">
+              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
               massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
               sociosqu ad litora torquent per mauris fusce conubia nostra.
               Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
@@ -196,7 +196,7 @@
           </div>
           <h4 class="text-description">
             <strong>Experienced Professionals</strong>
-            <p>
+            <p class="info-details">
               Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
               suscipit. Sed lectus. Integer euismod lacus luctus magna
             </p>
@@ -209,7 +209,7 @@
           </div>
           <h4 class="text-description">
             <strong>Business Review</strong>
-            <p>
+            <p class="info-details">
               Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
               suscipit. Sed lectus. Integer euismod lacus luctus magna
             </p>
@@ -222,7 +222,7 @@
           </div>
           <h4 class="text-description">
             <strong>Technological Transformation</strong>
-            <p>
+            <p class="info-details">
               Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
               suscipit. Sed lectus. Integer euismod lacus luctus magna
             </p>
@@ -239,7 +239,7 @@
         <v-layout row align="center">
           <v-flex xs12 sm12 md4 xl4>
             <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle"
+              <v-card-subtitle class="subtitle text-justify"
                 >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
                 nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
                 tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
@@ -266,7 +266,7 @@
           </v-flex>
              <v-flex xs12 sm12 md4 xl4>
             <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle"
+              <v-card-subtitle class="subtitle text-justify"
                 >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
                 nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
                 tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
@@ -293,7 +293,7 @@
           </v-flex>
              <v-flex xs12 sm12 md4 xl4>
             <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle"
+              <v-card-subtitle class="subtitle text-justify"
                 >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
                 nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
                 tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
@@ -417,6 +417,9 @@ export default {
   top: 10px;
   word-wrap: break-word;
   font-size: 16px;
+}
+.info-details{
+  font-weight: 300;
 }
 .client-image {
   height: 20px;
