@@ -5,9 +5,13 @@
       <v-toolbar-title class="dark--text">
        <router-link to="/" style="text-decoration: none">
           <div class="d-flex align-center">
-            <h1 class="blue--text lighten-3--text logo-text">In</h1>
-            <h1 class="logo-number">2</h1>
-            <h1 class="blue--text lighten-3--text logo-text">it</h1>
+            
+            <v-img
+             max-height="100"
+             max-width="160"
+             src="/assets/in2itlogo.png"
+             class="mt-5"
+></v-img>
           </div>
         </router-link>
       </v-toolbar-title>
