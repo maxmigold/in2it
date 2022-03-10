@@ -187,7 +187,7 @@
           </div>
           <h4 class="text-description">
             <strong>Experienced Professionals</strong>
-            <p class="info-details">
+            <p class="info-details text-justify">
               We work with several professionals which cuts across all fields we operate in. They execute tasks with a high level of 
               precision and dedication.
             </p>
@@ -200,7 +200,7 @@
           </div>
           <h4 class="text-description">
             <strong>Business Review</strong>
-            <p class="info-details">
+            <p class="info-details text-justify">
               We are involved with carrying out expressive business reviews from time to time to know how best to serve our clients.
             </p>
           </h4>
@@ -212,7 +212,7 @@
           </div>
           <h4 class="text-description">
             <strong>Technological Transformation</strong>
-            <p class="info-details">
+            <p class="info-details text-justify">
               We are leveraging on technology to transform the real estate sector, facility management, training and so much more.
             </p>
           </h4>
@@ -346,7 +346,7 @@ export default {
       { header:"Scan to BIM", details: "At In2It Africa, we use 3D laser scanning on your physical space or size to create an accurate digital represation of your building; turning it into a digital model that can be used planning and managing your built environment, as well as communicate and share project information with stakeholders.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
        { header:"BIM Authoring and Coordination", details: "At In2It, we make possible the effective integration of all data, both as regards the designs and the construction of your building model through coordination, management development of the project.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
         { header:"Digital Twins", details: "We generate and manage digital representations of physical assets, system and processes with our digital Twin in BIM. Get access to predictive maintenance, real-time remote monitoring, better team collaboration, better financial decision making and an accelerated risk management and production time when you work with In2it Africa. ", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-         { header:"Digital Site Works and Construction", details: "Our digital site works and construction offer is aimed at supplying and providing a cost effective operation and maintenance of a networked construction. At In2it, we use digital tols to reduce waste and ensure a prompt delivery, leading to increased productivity on the consruction site.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+         { header:"Digital Site Construction Works", details: "Our digital site works and construction offer is aimed at supplying and providing a cost effective operation and maintenance of a networked construction. At In2it, we use digital tols to reduce waste and ensure a prompt delivery, leading to increased productivity on the consruction site.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
           { header:"Facility Management and IOT", details: "The dual combination of faciity management and internet of things services is specially offered to ensure a high level of occupant satisfaction and safety across all industry wile still ensuring cost-effectiveness to maximize profit and ensure efficient management for facility managers. Think of a smart building? Think In2it!", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
            { header:"Digital Solutions", details: "With our digital solutions, you can now maximize and effectively extend the useful life of all assets across facility management industry using software features for asset tracking, preventive maintenance, parts inventory, repair maintenance, work orders and many others.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
              { header:"Training And Coaching", details: "Our training offers includes: Management of information and collaboration in BIM, Modelling in architecture and MEP (Mechanical, electrical and plumbing) in BIM. 2D, 3D, 4D, 5D, 6D BIM application. Also, Application of BIM in Facility Management", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
