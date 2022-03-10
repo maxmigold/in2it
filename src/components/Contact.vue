@@ -12,7 +12,7 @@
       </div>
       <div class="d-flex align-center ">
                 <span class="material-icons v"> call </span>
-                <p class="pt-4 ml-3 texts v">Mobile: 621-254-2147</p>
+                <p class="pt-4 ml-3 texts v">Mobile:  +2349157393243</p>
               </div>
       <div class="d-flex align-center">
         <span class="material-icons v">local_post_office </span>

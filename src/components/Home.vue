@@ -32,9 +32,7 @@
 
             <v-card-title>{{offer.header}} </v-card-title>
          
-          
-      <div :class="{readMore:readLess == false}" class="description-info">
-        <v-card-subtitle class="text-justify">
+          <v-card-subtitle class="text-justify ">
           {{ offer.details }}
             <span v-if="readMore == false" class="read-more">
         <a @click="readMore =! readMore">Read more</a>
@@ -42,7 +40,9 @@
       <span v-else class="read-less">
         <a @click="readMore =! readMore">Read less</a>
       </span>
-        </v-card-subtitle>
+        </v-card-subtitle> 
+      <div :class="{readMore:readLess == false}" class="description-info">
+       
       </div>
     
   
