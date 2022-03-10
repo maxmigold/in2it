@@ -16,9 +16,8 @@
         <span class="ml-5 mt-3 vl"></span>
         <h1 class="ml-1 mt-2 industry-verticals">Our Offers</h1>
       </div>
-      <p class="ml-5 mt-5">Know how in various industry verticals</p>
+      <p class="ml-5 mt-5">Know How in Various Industry Verticals</p>
     </v-container>
-
     <v-container grid-list-xl>
       <v-layout row align="center">
         <v-flex xs12 sm12 md4 xl4 
@@ -32,8 +31,24 @@
             ></v-img>
 
             <v-card-title>{{offer.header}} </v-card-title>
-            
-            <v-card-subtitle class="subtitle inline-block">{{offer.details}}</v-card-subtitle><label for="read-more-checkbox" class="read-more__label" data-read-more="Read more" data-read-less="See less" aria-hidden="true"></label>
+         
+          
+      <div :class="{readMore:readLess == false}" class="description-info">
+        <v-card-subtitle class="text-justify">
+          {{ offer.details }}
+            <span v-if="readMore == false" class="read-more">
+        <a @click="readMore =! readMore">Read more</a>
+      </span>
+      <span v-else class="read-less">
+        <a @click="readMore =! readMore">Read less</a>
+      </span>
+        </v-card-subtitle>
+      </div>
+    
+  
+              
+           
+           
           </v-card>
         </v-flex>
        
@@ -132,22 +147,21 @@
           <v-card
             class="mx-auto my-12"
             width="330"
-            height="400"
+            height="430"
             outlined
             style="border: 3px solid gray"
             color="lavender"
           >
             <v-card-title class="ml-8 mt-8"
-              >Estate Management Firm</v-card-title
+              >Our Unique Selling Point</v-card-title
             >
             <div class="underline-text "></div>
             <v-card-text class="text-justify">
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
+              We create value for design, construction, operation and maintenance of asset/civil 
+              works through innovative business processes and digital solutions.
+              In2it Afica has close affiliation with major firms and training instituions of international repute and remowned for excellence.
+              We create and deliver personalized training programs tailored to the client`s needs from ad hoc courses 2 hours to post-graduate master
+              courses covering over 300 hours of lessons. 
             </v-card-text>
             <router-link to="/About">
               <h4 align="center" style="color: grey; text-decoration: none">
@@ -174,8 +188,8 @@
           <h4 class="text-description">
             <strong>Experienced Professionals</strong>
             <p class="info-details">
-              Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
-              suscipit. Sed lectus. Integer euismod lacus luctus magna
+              We work with several professionals which cuts across all fields we operate in. They execute tasks with a high level of 
+              precision and dedication.
             </p>
           </h4>
           <div class="ml-4 d-flex">
@@ -187,8 +201,7 @@
           <h4 class="text-description">
             <strong>Business Review</strong>
             <p class="info-details">
-              Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
-              suscipit. Sed lectus. Integer euismod lacus luctus magna
+              We are involved with carrying out expressive business reviews from time to time to know how best to serve our clients.
             </p>
           </h4>
           <div class="ml-4 d-flex">
@@ -200,8 +213,7 @@
           <h4 class="text-description">
             <strong>Technological Transformation</strong>
             <p class="info-details">
-              Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus
-              suscipit. Sed lectus. Integer euismod lacus luctus magna
+              We are leveraging on technology to transform the real estate sector, facility management, training and so much more.
             </p>
           </h4>
         </div>
@@ -298,15 +310,19 @@
         </v-layout>
       </v-container>
     </v-container>
+
+  
   </v-main>
 </template>
 
 <script>
+
 export default {
   name: "Home",
 
   data: () => ({
-   // this.offers.details: false,
+    readMore: false,
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronictypesetting, remaining essentially unchanged. It was popularised in the 1960s  with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
     items: [
       {
         src: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -327,34 +343,49 @@ export default {
       { number: 2563, details: "SUCCESSFUL CASES" },
     ],
      offers: [
-      { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-       { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-        { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-         { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-          { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-           { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-            { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-             { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
-              { header:"Real Estate Management", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+      { header:"Scan to BIM", details: "At In2It Africa, we use 3D laser scanning on your physical space or size to create an accurate digital represation of your building; turning it into a digital model that can be used planning and managing your built environment, as well as communicate and share project information with stakeholders.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+       { header:"BIM Authoring and Coordination", details: "At In2It, we make possible the effective integration of all data, both as regards the designs and the construction of your building model through coordination, management development of the project.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+        { header:"Digital Twins", details: "We generate and manage digital representations of physical assets, system and processes with our digital Twin in BIM. Get access to predictive maintenance, real-time remote monitoring, better team collaboration, better financial decision making and an accelerated risk management and production time when you work with In2it Africa. ", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+         { header:"Digital Site Works and Construction", details: "Our digital site works and construction offer is aimed at supplying and providing a cost effective operation and maintenance of a networked construction. At In2it, we use digital tols to reduce waste and ensure a prompt delivery, leading to increased productivity on the consruction site.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+          { header:"Facility Management and IOT", details: "The dual combination of faciity management and internet of things services is specially offered to ensure a high level of occupant satisfaction and safety across all industry wile still ensuring cost-effectiveness to maximize profit and ensure efficient management for facility managers. Think of a smart building? Think In2it!", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+           { header:"Digital Solutions", details: "With our digital solutions, you can now maximize and effectively extend the useful life of all assets across facility management industry using software features for asset tracking, preventive maintenance, parts inventory, repair maintenance, work orders and many others.", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+             { header:"Training And Coaching", details: "Our training offers includes: Management of information and collaboration in BIM, Modelling in architecture and MEP (Mechanical, electrical and plumbing) in BIM. 2D, 3D, 4D, 5D, 6D BIM application. Also, Application of BIM in Facility Management", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
+              { header:"Common Data Environment", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar: "https://media.istockphoto.com/photos/businessman-trading-online-stock-market-on-teblet-screen-digital-picture-id1311598658?k=20&m=1311598658&s=612x612&w=0&h=DsH-Xq0w9pENqAw2i9EU4u4t-GZBKNndseKeOleByiY=" },
       
     ],
+    
   }),
    methods: {
-    shortText() {
-      if (this.offers.details) {
-        let newText = this.offers.details.substring(0);
-        return newText;
-      } else {
-        /*let newText = this.lorem.substring(0,50) + `...`;*/
-        let newText = this.offers.details.substring(0, 50);
-        return newText;
-      }
-    }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
   }
 };
 </script>
 
 <style scoped lang="scss">
+.description-info {
+    width: 350px;
+  }
+  .readLess {
+    height: 109px;
+    overflow: hidden;
+  }
+  .read-more, .read-less {
+    
+    display: inline-block;
+    color: white;
+  }
 .gridContainer {
   text-align: center;
   justify-content: space-evenly;
@@ -435,58 +466,6 @@ export default {
 }
 
 
-read-more {
-  /* You can update this variable directly in the html with the style attribute: style="--line-clamp: 3" */
-  --line-clamp: 3;
 
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
 
-.read-more__text {
-  display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp);
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.read-more__checkbox {
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.read-more__checkbox ~ .read-more__label {
-  cursor: pointer;
-  font-size: 0.75em;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-/* Don't forget focus and hover styles for accessibility! */
-.read-more__checkbox:focus ~ .read-more__label {
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-}
-
-.read-more__checkbox:hover ~ .read-more__label {
-  text-decoration: none;
-}
-
-.read-more__checkbox ~ .read-more__label::before {
-  content: attr(data-read-more);
-}
-
-.read-more__checkbox:checked ~ .read-more__label::before {
-  content: attr(data-read-less);
-}
-
-.read-more__checkbox:checked ~ .read-more__text {
-  --line-clamp: none;
-  -webkit-line-clamp: var(--line-clamp);
-}
 </style>

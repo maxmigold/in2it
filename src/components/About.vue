@@ -18,25 +18,11 @@
           How We Work
         </v-list-item-title>
         <v-card-subtitle class="text-justify">
-          Greyhound divisely hello coldly fonwderfully
-          Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa vestil bulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per mauris fusce conubia nostra.
+          In2It Africa is a corporate real estate management company which offers consulting services, training, customization of software 
+          and solutions with a major focus on digitalization facilities and management Building Information Modelling (BIM).
+          In2It Africa is incorporated in Nigeria as <strong>In2CREM Ltd.</strong> In2it Africa provides you solutions for investment planning, land acquisition, 
+          design, construction/fit-up, management and maintenance of coporate and commercial real estate at your finger tips.
+          With In2It Africa services, you can save costs and prevent problems by digitalizing your building and civil works systems.  
           </v-card-subtitle>
       </v-list-item-content>
     </v-list-item>
@@ -58,24 +44,26 @@
     
     </v-card-actions>
   </v-card>
+  
   </div>
 
 
 
-
+ 
    
 </template>
 <script>
+
 export default {
   name: "About",
-    data: () => (
-        {
-            //
-        }
-        
-    ),
+  
+    data() {
+    return {
+      txtString: `Note: This property was originally implemented in WebKit and has some issues. It got standardized for legacy support. The CSS Overflow Module Level 3 specification also defines a line-clamp property, which is meant to replace this property and avoid its issues.`,
+    }
+  },
 
-    
+  
  
 };
 </script>
