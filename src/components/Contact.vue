@@ -12,12 +12,12 @@
       </div>
       <div class="d-flex align-center ">
                 <span class="material-icons v"> call </span>
-                <p class="pt-4 ml-3 texts v">Mobile:  +2349157393243</p>
+                <p class="pt-4 ml-3 texts v">Mobile:   +234814401177</p>
               </div>
       <div class="d-flex align-center">
         <span class="material-icons v">local_post_office </span>
         <p class="pt-4 ml-3 texts v">
-          Email: contact@support.com
+          Email: paul.erubami@maxmigold.com
         </p>
       </div>
         </div>

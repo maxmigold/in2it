@@ -49,11 +49,11 @@
               </div>
               <div class="d-flex align-center contact-details pl-2">
                 <span class="material-icons"> call </span>
-                <p class="logo-number detail pt-4 ml-3">Mobile: +2349157393243</p>
+                <p class="logo-number detail pt-4 ml-3">Mobile: +234814401177</p>
               </div>
               <div class="d-flex align-center contact-details pl-2">
                 <span class="material-icons"> local_post_office</span>
-                <p class="logo-number detail pt-4 ml-3">Email: contact@support.com</p>
+                <p class="logo-number detail pt-4 ml-3">Email: paul.erubami@maxmigold.com</p>
               </div>
             </nav>
           </span></v-flex>

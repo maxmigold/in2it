@@ -90,6 +90,7 @@
               src="/assets/mario.jpeg"
               height="200px"
               width="500px"
+              contain
             ></v-img>
 
             <v-card-title>Mario Capuri</v-card-title>
@@ -103,6 +104,7 @@
               src="/assets/paulErubami.jpg"
               height="200px"
               width="500px"
+              contain
             ></v-img>
 
             <v-card-title>Paul Erubami</v-card-title>
@@ -116,6 +118,7 @@
               src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               height="200px"
               width="500px"
+              contain
             ></v-img>
 
             <v-card-title> Fisayo Animashaun</v-card-title>
@@ -129,6 +132,7 @@
               src="/assets/emmanuel.jpeg"
               height="200px"
               width="500px"
+              contain
             ></v-img>
 
             <v-card-title> Taiwo Emmanuel A. </v-card-title>
@@ -222,92 +226,49 @@
     <v-container>
       <div class="d-flex align-center">
         <span class="ml-5 mt-3 vl"></span>
-        <h1 class="ml-1 mt-2 industry-verticals">Our Clients Feedback</h1>
+        <h1 class="ml-1 mt-2 industry-verticals">Our Partners</h1>
       </div>
-      <v-container grid-list-xl>
-        <v-layout row align="center">
-          <v-flex xs12 sm12 md4 xl4>
-            <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle text-justify"
-                >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
-                nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
-                tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
-                amet mauris.</v-card-subtitle
-              >
-              <v-container class="d-flex">
-                <v-card-actions>
-                  <v-list-item class="grow">
-                    <v-list-item-avatar color="grey darken-3">
-                      <v-img
-                        class="elevation-6"
-                        alt=""
-                        src="https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                      ></v-img>
-                    </v-list-item-avatar>
-
-                    <v-list-item-content>
-                      <v-list-item-title>Doris Simon</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card-actions>
-              </v-container>
-            </v-card>
-          </v-flex>
-             <v-flex xs12 sm12 md4 xl4>
-            <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle text-justify"
-                >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
-                nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
-                tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
-                amet mauris.</v-card-subtitle
-              >
-              <v-container class="d-flex">
-                <v-card-actions>
-                  <v-list-item class="grow">
-                    <v-list-item-avatar color="grey darken-3">
-                      <v-img
-                        class="elevation-6"
-                        alt=""
-                        src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                      ></v-img>
-                    </v-list-item-avatar>
-
-                    <v-list-item-content>
-                      <v-list-item-title>Mercy Shaw</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card-actions>
-              </v-container>
-            </v-card>
-          </v-flex>
-             <v-flex xs12 sm12 md4 xl4>
-            <v-card class="mx-auto" width="500">
-              <v-card-subtitle class="subtitle text-justify"
-                >Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus
-                nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum
-                tincidunt malesuada tellus. Ut ult ultrices enim curabitur sit
-                amet mauris.</v-card-subtitle
-              >
-              <v-container class="d-flex">
-                <v-card-actions>
-                  <v-list-item class="grow">
-                    <v-list-item-avatar color="grey darken-3">
-                      <v-img
-                        class="elevation-6"
-                        alt=""
-                        src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                      ></v-img>
-                    </v-list-item-avatar>
-
-                    <v-list-item-content>
-                      <v-list-item-title>Brian Francis</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card-actions>
-              </v-container>
-            </v-card>
-          </v-flex>
-        </v-layout>
+      <v-container>
+        <v-sheet
+    class="m"
+    elevation="8"
+    
+    
+  >
+    <v-slide-group
+      v-model="model"
+      class="pa-4"
+      active-class="success"
+      show-arrows
+    >
+      <v-slide-item
+        v-for="n in partners"
+        :key="n"
+        
+       
+      >
+        <v-img
+          
+          class="ma-4"
+          height="200"
+          width="300"
+          :src="n.logo"
+          contain
+          xs12 sm12 md3 xl3
+         
+          
+        >
+          <v-row
+            class="fill-height"
+            align="center"
+            justify="center"
+          >
+           
+          </v-row>
+        </v-img>
+      </v-slide-item>
+    </v-slide-group>
+  </v-sheet>
       </v-container>
     </v-container>
 
@@ -322,7 +283,6 @@ export default {
 
   data: () => ({
     readMore: false,
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronictypesetting, remaining essentially unchanged. It was popularised in the 1960s  with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
     items: [
       {
         src: "/assets/slider2.png",
@@ -355,6 +315,18 @@ export default {
              { header:"Training And Coaching", details: "Our training offers includes: Management of information and collaboration in BIM, Modelling in architecture and MEP (Mechanical, electrical and plumbing) in BIM. 2D, 3D, 4D, 5D, 6D BIM application. Also, Application of BIM in Facility Management", avatar:"/assets/slider2.png" },
               { header:"Common Data Environment", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar:"/assets/slider4.png"},
       
+    ],
+     partners: [
+      { logo: "/assets/partner2.svg" },
+      { logo: "/assets/partner2.svg" },
+      { logo: "/assets/slider4.png" },
+      { logo: "/assets/slider5.png" },
+      { logo: "/assets/slider6.png" },
+      { logo: "/assets/slider2.png" },
+      { logo: "/assets/slider3.png" },
+      { logo: "/assets/slider4.png" },
+      { logo: "/assets/slider5.png" },
+      { logo: "/assets/partner1.svg"  },
     ],
     
   }),
