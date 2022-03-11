@@ -34,16 +34,16 @@
          
           <v-card-subtitle class="text-justify ">
           {{ offer.details }}
-            <span v-if="readMore == false" class="read-more">
+            <!-- <span v-if="readMore == false" class="read-more">
         <a @click="readMore =! readMore">Read more</a>
-      </span>
-      <span v-else class="read-less">
+      </span> -->
+      <!-- <span v-else class="read-less">
         <a @click="readMore =! readMore">Read less</a>
-      </span>
+      </span> -->
         </v-card-subtitle> 
-      <div :class="{readMore:readLess == false}" class="description-info">
+      <!-- <div :class="{readMore:readLess == false}" class="description-info">
        
-      </div>
+      </div> -->
     
   
               
