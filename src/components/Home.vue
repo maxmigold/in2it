@@ -115,7 +115,7 @@
         <v-flex xs12 sm12 md3 xl3>
           <v-card class="mx-auto" width="500">
             <v-img
-              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              src="/assets/fisayo.jpeg"
               height="200px"
               width="500px"
               contain

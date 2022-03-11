@@ -80,7 +80,7 @@ export default {
             teams:[
                 {name:"Mario Capuri", position: "Management and BIM Manager", avatar:"/assets/mario.jpeg"},
                 {name:"Paul Erubami", position: "Facility Manager And Sustainability Expert", avatar:"/assets/paulErubami.jpg"},
-                {name:"Fisayo Animashaun", position: "Facility And BIM Manager", avatar:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"},
+                {name:"Fisayo Animashaun", position: "Facility And BIM Manager", avatar:"/assets/fisayo.jpeg"},
                 {name:"Taiwo Emmanuel A.", position: "Architect And BIM Modeller", avatar:"/assets/emmanuel.jpeg"},
                 {name:"Sunny Ojo", position: "Mechanical Engineer", avatar:"/assets/sunny.jpeg"},
                 {name:"Arise Oluwatobiloba", position: "Interior Designer", avatar:"/assets/Arise.jpeg"},
