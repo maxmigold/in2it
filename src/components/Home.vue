@@ -1,15 +1,23 @@
 <template>
-  <v-main class="ma-0 pa-0">
+  <div>
     <!-- slider section -->
-    <v-carousel>
+    <div class="slider">
+    <v-carousel  cycle >
       <v-carousel-item
+      class="slider-image"
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
         reverse-transition="fade-transition"
         transition="fade-transition"
+        
+        
+
+        
       ></v-carousel-item>
     </v-carousel>
+    </div>
+    
 
     <v-container grid-list-xl>
       <div class="d-flex align-center">
@@ -28,6 +36,7 @@
               :src="offer.avatar"
               height="200px"
               width="500px"
+              contain
             ></v-img>
 
             <v-card-title>{{offer.header}} </v-card-title>
@@ -273,7 +282,7 @@
     </v-container>
 
   
-  </v-main>
+  </div>
 </template>
 
 <script>
@@ -285,19 +294,19 @@ export default {
     readMore: false,
     items: [
       {
-        src: "/assets/slider2.png",
+        src: "/assets/carousel1.png",
       },
       {
-        src: "/assets/slider3.png",
+        src: "/assets/carousel2.png",
       },
       {
-        src: "/assets/slider4.png",
+        src: "/assets/carousel3.png",
       },
       {
-        src: "/assets/slider5.png",
+        src: "/assets/carousel4.png",
       },
        {
-        src: "/assets/slider6.png",
+        src: "/assets/carousel5.png",
       },
     ],
     stats: [
@@ -360,6 +369,18 @@ export default {
 <style scoped lang="scss">
 .description-info {
     width: 350px;
+  }
+  .slider{
+    position: relative;
+  }
+  .slider-image{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left:0;
+   right: 0;
+   z-index: 1; 
+   
   }
   .readLess {
     height: 109px;

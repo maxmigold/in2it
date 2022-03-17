@@ -26,10 +26,10 @@
             </div>
             <nav class="col-list pt-2">
               <ul class="lists">
-                <li><p class="detail-listing">Business Litigation</p></li>
+                <li><p class="detail-listing">BIM Authoring</p></li>
                 <li><p class="detail-listing">IT services</p></li>
-                <li><p class="detail-listing">Real Estate Mangement</p></li>
-                <li><p class="detail-listing">Criminal Investigation</p></li>
+                <li><p class="detail-listing">Facility Mangement</p></li>
+                <li><p class="detail-listing">Training and Coaching</p></li>
               </ul>
             </nav>
           </span>
