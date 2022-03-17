@@ -2,8 +2,9 @@
   <div>
     <!-- slider section -->
     <div class="slider">
-    <v-carousel  cycle >
+    <v-carousel  cycle  xs12 sm12 md12 xl12 >
       <v-carousel-item
+      xs12 sm12 md12 xl12 
       class="slider-image"
         v-for="(item, i) in items"
         :key="i"
@@ -14,7 +15,20 @@
         
 
         
-      ></v-carousel-item>
+      >
+     
+       <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+        >
+          <div class="text-h2 slider-description">
+             <v-container>{{ item.description }}</v-container>
+          </div>
+        </v-row>
+      
+     
+      </v-carousel-item>
     </v-carousel>
     </div>
     
@@ -66,7 +80,12 @@
     <v-divider></v-divider>
     <v-container>
       <v-layout row align="center" class="pt-5 mx-7">
-        <v-flex v-for="stat in stats" :key="stat.text" xs12 sm3 md4 xl4>
+        <v-flex v-for="stat in stats" :key="stat.text" xs12 sm12 md3 xl3>
+        <v-divider
+            class="mx-4 hidden-xs-and-down"
+            vertical
+            height="10px"
+          ></v-divider>
           <v-list-item two-line>
             <v-list-item-content>
               <v-list-item-title class="statistic"
@@ -78,11 +97,7 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-divider
-            class="mx-4 hidden-xs-and-down"
-            vertical
-            height="10px"
-          ></v-divider>
+          
         </v-flex>
       </v-layout>
     </v-container>
@@ -132,7 +147,7 @@
 
             <v-card-title> Fisayo Animashaun</v-card-title>
 
-            <v-card-subtitle class="subtitle">Facility And BIM Manager </v-card-subtitle>
+            <v-card-subtitle class="subtitle">Facility Manager And BIM Manager </v-card-subtitle>
           </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 xl3>
@@ -294,25 +309,31 @@ export default {
     readMore: false,
     items: [
       {
-        src: "/assets/carousel1.png",
+        src: "/assets/carousel1.jpg",
+        description: "FACILITY MANAGEMENT AND IOT"
       },
       {
-        src: "/assets/carousel2.png",
+        src: "/assets/carousel2.jpg",
+        description: "DIGITAL SITE WORKS AND CONSTRUCTION"
       },
       {
-        src: "/assets/carousel3.png",
+        src: "/assets/carousel3.jpg", 
+        description: "COMMON DATA ENVIRONMENT"
       },
       {
-        src: "/assets/carousel4.png",
+        src: "/assets/carousel4.jpg",
+        description: "DIGITAL TWINS"
       },
        {
-        src: "/assets/carousel5.png",
+        src: "/assets/carousel5.jpg",
+        description: "CONSULTING AND CHANGE MANAGEMENT "
       },
     ],
     stats: [
-      { number: 2342, details: "TRUSTED CLIENTS" },
-      { number: 1289, details: "TOTAL EXECUTION" },
-      { number: 2563, details: "SUCCESSFUL CASES" },
+      { number: 2, details: "SENIOR PARTNERS " },
+      { number: 100, details: "CONSULTING PROJECT" },
+      { number: 10, details: "CONSULTANTS" },
+       { number: 50, details: "SATISFIED CUSTOMERS" }
     ],
      offers: [
       { header:"Scan to BIM", details: "At In2It Africa, we use 3D laser scanning on your physical space or size to create an accurate digital represation of your building; turning it into a digital model that can be used planning and managing your built environment, as well as communicate and share project information with stakeholders.", avatar: "/assets/slider2.png"},
@@ -322,7 +343,7 @@ export default {
           { header:"Facility Management and IOT", details: "The dual combination of faciity management and internet of things services is specially offered to ensure a high level of occupant satisfaction and safety across all industry wile still ensuring cost-effectiveness to maximize profit and ensure efficient management for facility managers. Think of a smart building? Think In2it!", avatar: "/assets/iot.png" },
            { header:"Digital Solutions", details: "With our digital solutions, you can now maximize and effectively extend the useful life of all assets across facility management industry using software features for asset tracking, preventive maintenance, parts inventory, repair maintenance, work orders and many others.", avatar: "/assets/digitalsolution.png"},
              { header:"Training And Coaching", details: "Our training offers includes: Management of information and collaboration in BIM, Modelling in architecture and MEP (Mechanical, electrical and plumbing) in BIM. 2D, 3D, 4D, 5D, 6D BIM application. Also, Application of BIM in Facility Management", avatar:"/assets/training.png" },
-              { header:"Common Data Environment", details: "Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna", avatar:"/assets/slider4.png"},
+             
       
     ],
      partners: [
@@ -382,6 +403,25 @@ export default {
    z-index: 1; 
    
   }
+  .slider-description{
+    color: white;
+    opacity: 0.8;
+  }
+ /* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .slider-description{
+      text-align: center;
+      color: red;
+    }
+
+}
+
+
   .readLess {
     height: 109px;
     overflow: hidden;
@@ -464,6 +504,7 @@ export default {
 }
 .info-details{
   font-weight: 300;
+  font-size: 14px;
 }
 .client-image {
   height: 20px;
