@@ -22,7 +22,7 @@
           align="center"
           justify="center"
         >
-          <div class="text-h2 slider-description">
+          <div class="slider-description">
              <v-container>{{ item.description }}</v-container>
           </div>
         </v-row>
@@ -406,19 +406,18 @@ export default {
   .slider-description{
     color: white;
     opacity: 0.8;
+    font-size: 40px;
+    font-weight: 400;
   }
  /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    .slider-description{
-      text-align: center;
-      color: red;
-    }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slider-description{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    
+  }
 }
 
 
