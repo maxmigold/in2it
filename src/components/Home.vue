@@ -119,7 +119,7 @@
 
             <v-card-title>Mario Capuri</v-card-title>
 
-            <v-card-subtitle class="subtitle">Management And BIM Manager</v-card-subtitle>
+            <v-card-subtitle class="subtitle">Change Management And BIM Manager</v-card-subtitle>
           </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3 xl3>
@@ -132,6 +132,7 @@
             ></v-img>
 
             <v-card-title>Paul Erubami</v-card-title>
+             <v-card-subtitle  style="font-size: 12px;">(CFM, MIoD, CIWFM, MRICS)</v-card-subtitle>
 
             <v-card-subtitle class="subtitle">Facility Manager And Sustainability Expert</v-card-subtitle>
           </v-card>
@@ -145,7 +146,8 @@
               contain
             ></v-img>
 
-            <v-card-title> Fisayo Animashaun</v-card-title>
+            <v-card-title> Fisayo Animashaun </v-card-title>
+            <v-card-subtitle  style="font-size: 12px">(MNSE, FMP®, COREN)</v-card-subtitle>
 
             <v-card-subtitle class="subtitle">Facility Manager And BIM Manager </v-card-subtitle>
           </v-card>
