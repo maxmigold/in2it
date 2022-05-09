@@ -110,7 +110,7 @@
           </span></v-flex> 
       </v-layout>
       <v-card-text class="py-2 white--text text-center">
-        ©{{ new Date().getFullYear() }} :<strong>Developed by <a style="text-decoration: none" target="_blank" href="https://www.linkedin.com/in/omotomiwa-christopher-626984134/">Iamchris</a></strong>
+        ©{{ new Date().getFullYear() }} :<strong>in2it.ng</strong>
       </v-card-text>
     </v-container>
   </v-footer>
